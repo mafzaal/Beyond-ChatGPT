@@ -5,7 +5,8 @@ import logging
 import os
 from openai import AsyncOpenAI  # importing openai for API usage
 import chainlit as cl  # importing chainlit for our app
-# from chainlit.types import Prompt, PromptMessage  # importing prompt tools
+
+
 from dotenv import load_dotenv
 
 load_dotenv()

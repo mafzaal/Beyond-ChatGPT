@@ -27,5 +27,5 @@ COPY . .
 RUN --mount=type=secret,id=OPENAI_API_KEY,mode=0444,required=true
 
 EXPOSE 7860
-CMD ["chainlit", "run", "app.py","--host","0.0.0.0", "--port", "7860"]
+CMD ["chainlit", "run", "app.py","--host","0.0.0.0", "--port", "7860","--headless"]
 
