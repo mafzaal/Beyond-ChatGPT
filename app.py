@@ -52,7 +52,7 @@ async def start_chat():
 async def main(message: cl.Message):
     settings = cl.user_session.get("settings")
 
-    client = AsyncOpenAI()
+    client = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
     print(message.content)
 
