@@ -5,14 +5,14 @@ import logging
 import os
 from openai import AsyncOpenAI  # importing openai for API usage
 import chainlit as cl  # importing chainlit for our app
-
+from chainlit.config import config
 
 from dotenv import load_dotenv
 
 load_dotenv()
 
 # Check API key at startup
-
+print(config.project.allow_origins)
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

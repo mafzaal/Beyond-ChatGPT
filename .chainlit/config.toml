@@ -1,6 +1,7 @@
 [project]
 # Whether to enable telemetry (default: true). No personal data is collected.
 enable_telemetry = true
+allow_origins = ["*"]
 
 # List of environment variables to be provided by each user to use the app.
 user_env = []
